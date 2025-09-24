@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+build/
+dist/
+.cache/
+coverage/
+*.tsbuildinfo
+
+# Turborepo
+.turbo/
+
+# Remix build artifacts
+apps/**/public/build/
+apps/**/.cache/
+apps/**/build/
+packages/**/dist/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Other
+out/
+.next/

@@ -1,0 +1,14 @@
+{
+  "name": "my-turbo-project",
+  "private": true,
+  "packageManager": "npm@10.8.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "turbo": "latest",
+    "typescript": "^5.5.4"
+  }
+}
+

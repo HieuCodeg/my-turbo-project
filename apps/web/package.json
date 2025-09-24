@@ -1,0 +1,25 @@
+{
+  "name": "web",
+  "private": true,
+  "scripts": {
+    "dev": "remix dev",
+    "build": "remix build",
+    "start": "remix-serve build"
+  },
+  "dependencies": {
+    "@remix-run/node": "^2.17.1",
+    "@remix-run/react": "latest",
+    "@remix-run/serve": "^2.17.1",
+    "isbot": "^4",
+    "react": "18.x",
+    "react-dom": "18.x",
+    "tailwindcss": "^3.4.10",
+    "tailwindcss-animate": "^1.0.7",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "ui": "file:../../packages/ui"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.17.1"
+  }
+}
