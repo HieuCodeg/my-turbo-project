@@ -3,7 +3,7 @@
     "jsx": "react-jsx",
     "moduleResolution": "node",
     "target": "ES2019",
-    "module": "ESNext",
+    "module": "ES2020",
     "declaration": true,
     "outDir": "dist",
     "strict": true,

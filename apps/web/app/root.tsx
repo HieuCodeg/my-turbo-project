@@ -8,6 +8,25 @@ import {
 } from "@remix-run/react";
 import stylesheet from "./tailwind.css?url";
 
+// temporarily simplified to isolate SSR error
+
+export default function App() {
+  return (
+    <html lang="en">
+      <head>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <Outlet />
+        <ScrollRestoration />
+        <Scripts />
+        <LiveReload />
+      </body>
+    </html>
+  );
+}
+
 export function meta() {
   return [
     { charset: "utf-8" },
@@ -18,21 +37,4 @@ export function meta() {
 
 export function links() {
   return [{ rel: "stylesheet", href: stylesheet }];
-}
-
-export default function App() {
-  return (
-    <html lang="en">
-      <head>
-        <Meta />
-        <Links />
-      </head>
-      <body>
-        <Outlet /> 
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
-      </body>
-    </html>
-  );
 }
