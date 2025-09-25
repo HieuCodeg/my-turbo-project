@@ -42,6 +42,7 @@
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   overflow: hidden;
+  height: 100%;
 }
 
 .flexlayout__tabset {

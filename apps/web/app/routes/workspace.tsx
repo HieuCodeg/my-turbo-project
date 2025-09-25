@@ -170,9 +170,9 @@ export default function WorkspacePage() {
   }, [theme]);
 
   return (
-    <div className={`min-h-screen ${theme === 'dark' ? 'bg-gray-900 text-white' : theme === 'blue' ? 'bg-blue-50 text-blue-900' : theme === 'green' ? 'bg-green-50 text-green-900' : 'bg-white text-gray-900'}`}>
+    <div className={`h-screen grid grid-rows-[auto,1fr] ${theme === 'dark' ? 'bg-gray-900 text-white' : theme === 'blue' ? 'bg-blue-50 text-blue-900' : theme === 'green' ? 'bg-green-50 text-green-900' : 'bg-white text-gray-900'}`}>
       {/* Header */}
-      <div className={`border-b shadow-sm ${theme === 'dark' ? 'bg-gray-800 border-gray-700' : theme === 'blue' ? 'bg-blue-100 border-blue-200' : theme === 'green' ? 'bg-green-100 border-green-200' : 'bg-white border-gray-200'}`}>
+      <div className={`border-b shadow-sm sticky top-0 z-10 h-24 ${theme === 'dark' ? 'bg-gray-800 border-gray-700' : theme === 'blue' ? 'bg-blue-100 border-blue-200' : theme === 'green' ? 'bg-green-100 border-green-200' : 'bg-white border-gray-200'}`}>
         <div className="p-4">
           <div className="flex items-center justify-between">
             <div>
@@ -203,8 +203,8 @@ export default function WorkspacePage() {
       </div>
 
       {/* Main Layout */}
-      <div className="flex-1 min-h-0 overflow-hidden" style={{ height: 'calc(100vh - 100px)' }}>
-        <Layout model={model} factory={componentFactory} />
+      <div className="relative min-h-0 h-full overflow-auto">
+        <Layout model={model} factory={componentFactory} className="h-full" style={{ height: '100%' }} />
       </div>
     </div>
   );
