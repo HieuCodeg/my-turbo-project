@@ -1,5 +1,7 @@
 /* Import FlexLayout styles */
 @import 'flexlayout-react/style/light.css';
+/* Import React Data Grid styles */
+@import 'react-data-grid/lib/styles.css';
 
 @tailwind base;
 @tailwind components;

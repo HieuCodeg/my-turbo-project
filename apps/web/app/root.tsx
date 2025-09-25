@@ -6,6 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import * as React from "react";
 import stylesheet from "./tailwind.css?url";
 
 // temporarily simplified to isolate SSR error
